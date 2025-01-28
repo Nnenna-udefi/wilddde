@@ -24,11 +24,11 @@ export const Hotels = ({}) => {
   };
 
   return (
-    <div className="">
+    <div className="bg-[#f3ece2] lg:bg-[#ebe0ce] py-4">
       {apartment.map((apartHotels) => (
         <div key={apartHotels.name}>
-          <div className="my-10 px-12 md:px-36 flex justify-between">
-            <h2 className="hover:text-tealGreen w-[70%] text-[40px]">
+          <div className="my-10 px-8 md:px-36 md:flex block justify-between">
+            <h2 className="hover:text-tealGreen md:w-[70%] w-full text-2xl md:text-[40px]">
               {apartHotels.name}
             </h2>
             <div>
@@ -36,7 +36,7 @@ export const Hotels = ({}) => {
                 <div className="flex text-[22px] justify-center items-center gap-2">
                   <Star className=" fill-tealGreen " size={15} />
 
-                  <div>
+                  <div className="flex md:flex-col flex-row md:gap-0 gap-2">
                     <p className="text-center">{apartHotels.rating}</p>
                     <p>Excellent</p>
                   </div>
@@ -46,7 +46,7 @@ export const Hotels = ({}) => {
               </div>
             </div>
           </div>
-          <div className="px-12 md:px-36 hidden md:grid gap-4 grid-cols-2 grid-rows-2 w-full h-[300px]">
+          <div className="px-8 md:px-36 hidden md:grid gap-4 grid-cols-2 grid-rows-2 w-full h-[300px]">
             {/* Video spanning 2 rows */}
             <div className="row-span-2 h-full">
               <video
@@ -92,7 +92,7 @@ export const Hotels = ({}) => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="px-12 md:px-36 left-0">
+          <div className="px-8 md:px-36 left-0">
             <button
               onClick={toggleModal}
               className="rounded-full right-0 border hover:bg-black hover:text-white md:right-0 text-lg my-4 py-2 px-4 flex gap-2 border-borderBrown bg-none"
@@ -102,7 +102,7 @@ export const Hotels = ({}) => {
             </button>
           </div>
 
-          <div className="flex justify-between px-12 md:px-36 py-10">
+          <div className="flex justify-between px-8 md:px-36 py-10">
             <ul className="text-xl list-none space-y-2">
               <li className="custom-list-item">{apartHotels.list1}</li>
               <li className="custom-list-item">{apartHotels.list2}</li>
@@ -116,7 +116,7 @@ export const Hotels = ({}) => {
             </div>
           </div>
 
-          <div className="px-12 md:px-36">
+          <div className="px-8 md:px-36">
             <h3 className="text-3xl italic">Amenities</h3>
             <div className="grid my-4 w-full text-lg  grid-cols-3 place-items-center md:grid-cols-6">
               <div className="my-4">
@@ -158,13 +158,15 @@ export const Hotels = ({}) => {
             </div>
           </div>
 
-          <div className="md:hidden block w-full px-12">
+          <div className="md:hidden block w-full px-8">
             <button className="bg-tealGreen w-full text-lg text-[#e3e6cb] rounded-sm py-4 px-10 uppercase">
               View Aparthotel
             </button>
           </div>
 
-          <hr className="mt-10 border px-12 border-borderBrown w-full" />
+          <div className="mt-10 my-20 px-8 md:px-36">
+            <hr className="border border-borderBrown w-full" />
+          </div>
         </div>
       ))}
 

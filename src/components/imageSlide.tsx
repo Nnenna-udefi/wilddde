@@ -63,7 +63,10 @@ export const ImageSlide = () => {
             }}
           >
             {ImageSlideShow.map((slide) => (
-              <div key={slide.caption} className="flex-shrink-0  w-[25%] px-4">
+              <div
+                key={slide.caption}
+                className="flex-shrink-0 w-[40%]  md:w-[25%] px-4"
+              >
                 <div className="rounded-md overflow-hidden">
                   <Image
                     src={slide.url}

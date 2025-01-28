@@ -45,8 +45,8 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="md:my-0 mt-12">
-          <h4 className="italic text-xl mb-4">Newsletter</h4>
-          <div className="flex justify-between border-b py-2 text-2xl">
+          <h4 className="italic text-2xl mb-4">Newsletter</h4>
+          <div className="block md:flex justify-between border-b py-2 text-2xl">
             <input
               type="text"
               placeholder="Email address"
@@ -54,7 +54,7 @@ export const Footer = () => {
             />
             <CustomButton
               text="Sign Up"
-              className="bg-[#e8e0d5] text-[16px] text-tealGreen"
+              className="bg-[#e8e0d5] md:mt-0 mt-6 text-[16px] text-tealGreen"
             />
           </div>
           <p className="md:text-xl text-lg my-2">
@@ -70,7 +70,7 @@ export const Footer = () => {
       </div>
 
       <div className="py-10 lg:flex block items-center md:px-12 px-8">
-        <div className="flex gap-5 md:gap-10 lg:w-[50%] w-full ">
+        <div className="md:flex block gap-5 md:gap-10 lg:w-[50%] w-full ">
           <div className="">
             <p className="text-xl italic">Languages</p>
             <button className="rounded-full hover:bg-lightTeal items-center my-6 gap-20 text-lg border flex justify-between px-4 py-2 border-lightTeal">

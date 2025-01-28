@@ -57,10 +57,10 @@ export const MemberSlide = () => {
             {MemberSlideShow.map((slide) => (
               <div
                 key={slide.caption}
-                className="flex-shrink-0 w-[40%]  lg:w-[20%] px-4"
+                className="flex-shrink-0 w-[80%]  lg:w-[20%] px-4"
               >
                 <p className="text-xl italic my-3">{slide.caption}</p>
-                <p className="text-4xl md:text-5xl text-center my-3">
+                <p className="text-3xl md:text-5xl text-center my-3">
                   {slide.text}
                 </p>
                 <div className="border-r border-borderBrown overflow-hidden">

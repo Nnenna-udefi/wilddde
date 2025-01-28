@@ -27,11 +27,11 @@ const wonArray = [
 export const WonderfulSection = () => {
   return (
     <div className="bg-lightBrown px:12 md:px-20 py-20">
-      <div className="grid place-items-center md:grid-cols-4 grid-cols-2 gap-20">
+      <div className="grid place-items-center px-12 md:px-0 md:grid-cols-4 grid-cols-2 gap-20">
         {wonArray.map((array) => (
           <div
             key={array.caption}
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col text-center justify-center items-center"
           >
             <div className="w-20">
               <array.image />

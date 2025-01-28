@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export const Comfort = () => {
   return (
-    <div className="bg-[#c4673b] pb-32">
-      <div className="m px-12 md:px-36 ">
+    <div className="bg-[#c4673b] pt-10 pb-32">
+      <div className=" px-8 md:px-36 ">
         <div className="md:w-[90%] w-full">
           <h2 className="italic text-2xl">Explore Wilde</h2>
           <h1 className="text-6xl md:text-7xl ">

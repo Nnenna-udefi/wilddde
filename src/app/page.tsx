@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Nav />
-      <div className="bg-[#ebe0ce]">
+      <div className="bg-[#ebe0ce] text-black">
         <HeroSection />
         <MainSection />
         <Footer />
