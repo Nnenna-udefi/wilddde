@@ -20,7 +20,7 @@ export const HeroSection = () => {
       {/* <div className="absolute  inset-0 bg-black opacity-10"></div> */}
       {isSideNavOpen && <SideNav closeNav={() => setIsSideNavOpen(false)} />}
 
-      <div className=" items-center flex border-b text-md border-borderBrown pb-3 md:text-lg justify-between">
+      <div className=" items-center  flex border-b text-md border-borderBrown pb-3 md:text-lg justify-between">
         <div>
           <p className="text-lg  text-black">
             <span className="border rounded-full border-black p-2">Wilde</span>{" "}

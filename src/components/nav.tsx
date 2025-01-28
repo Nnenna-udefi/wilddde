@@ -13,7 +13,7 @@ export const Nav = () => {
   return (
     <div className="">
       {showSale && (
-        <div className="px-8 md:px-12 py-4 bg-[#f3ece2]">
+        <div className="px-8 md:px-12 py-4 text-black bg-[#f3ece2]">
           <div className="flex justify-between items-center">
             <div className="flex gap-4 items-center">
               <Image
