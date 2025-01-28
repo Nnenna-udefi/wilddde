@@ -1,13 +1,24 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Menu } from "lucide-react";
 import { CustomButton } from "./ui/customButton";
 import { checkInNav } from "./utils/constant";
+import { SideNav } from "./sideNav";
 
 export const HeroSection = () => {
+  const [isSideNavOpen, setIsSideNavOpen] = useState(false);
+
+  const toggleSideNav = () => {
+    setIsSideNavOpen((prev) => !prev);
+  };
   return (
     <div className="relative px-4 md:px-12 md:bg-bgHero2 bg-bgHero1 md:rounded-xl rounded-none overflow-hidden bg-cover  md:bg-[length:50%_100%] md:bg-right  bg-no-repeat  py-6 font-fontMedian">
       {/* Overlay */}
+      {isSideNavOpen && (
+        <div className="absolute inset-0 bg-[#626f5b] opacity-70 z-40" />
+      )}
       {/* <div className="absolute  inset-0 bg-black opacity-10"></div> */}
+      {isSideNavOpen && <SideNav closeNav={() => setIsSideNavOpen(false)} />}
 
       <div className=" items-center flex border-b text-md border-borderBrown pb-3 md:text-lg justify-between">
         <div>
@@ -21,7 +32,7 @@ export const HeroSection = () => {
             className="bg-[#f3ece2] text-black border-black border"
             text={"Login"}
           />
-          <Menu className="text-white md:text-black" />
+          <Menu className="text-white md:text-black" onClick={toggleSideNav} />
         </div>
       </div>
 
