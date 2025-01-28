@@ -87,10 +87,20 @@ export const Hotels = ({}) => {
 
           <div className="md:hidden block h-full">
             <video
-              src="https://download-video-ak.vimeocdn.com/v3-1/playback/af3919ca-fb29-4ddf-8696-4f18e773fc2a/28db0ebb-a749346e?__token__=st=1737900554~exp=1737914954~acl=%2Fv3-1%2Fplayback%2Faf3919ca-fb29-4ddf-8696-4f18e773fc2a%2F28db0ebb-a749346e%2A~hmac=7428d87320963c6146fc4bddd6188a01ba9a194a336ca07cea0280ac71260396&r=dXMtd2VzdDE%3D"
               controls
-              className="w-full h-full object-cover"
-            />
+              className="w-full h-full rounded-s-lg object-cover"
+              poster={img1.src}
+            >
+              <source
+                src="https://download-video-ak.vimeocdn.com/v3-1/playback/af3919ca-fb29-4ddf-8696-4f18e773fc2a/28db0ebb-a749346e?__token__=st=1737900554~exp=1737914954~acl=%2Fv3-1%2Fplayback%2Faf3919ca-fb29-4ddf-8696-4f18e773fc2a%2F28db0ebb-a749346e%2A~hmac=7428d87320963c6146fc4bddd6188a01ba9a194a336ca07cea0280ac71260396&r=dXMtd2VzdDE%3D"
+                type="video/mp4"
+              />
+              <Image
+                src={img1}
+                alt="Video fallback"
+                className="w-full h-full object-cover"
+              />
+            </video>
           </div>
           <div className="px-8 md:px-36 left-0">
             <button
