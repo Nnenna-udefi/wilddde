@@ -44,7 +44,7 @@ export const MemberSlide = () => {
         </div>
 
         {/* Slide Container */}
-        <div className="relative overflow-hidden  my-10 w-full px-36">
+        <div className="relative overflow-hidden  my-10 w-full px-20 md:px-36">
           <div
             className="flex transition-transform duration-500"
             style={{
@@ -57,7 +57,7 @@ export const MemberSlide = () => {
             {MemberSlideShow.map((slide) => (
               <div
                 key={slide.caption}
-                className="flex-shrink-0 w-[80%]  lg:w-[20%] px-4"
+                className="flex-shrink-0 w-full  lg:w-[20%] px-4"
               >
                 <p className="text-xl italic my-3">{slide.caption}</p>
                 <p className="text-3xl md:text-5xl text-center my-3">
