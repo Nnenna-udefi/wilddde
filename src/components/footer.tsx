@@ -110,7 +110,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex md:mt-0 mt-4 lg:flex-row flex-col md:gap-10 gap-2 text-base md:text-lg">
+        <div className="flex md:mt-0 mt-4 lg:flex-row flex-col items-center md:gap-10 gap-2 text-base md:text-lg">
           <p className="underline">Privacy</p>
           <p className="underline">Terms & Conditions</p>
           <div className="flex gap-1 mt-4 items-center">
