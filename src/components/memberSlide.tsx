@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
-import { MemberSlideShow } from "./utils/constant";
+import { MemberSlideShow } from "../utils/constant";
 
 export const MemberSlide = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

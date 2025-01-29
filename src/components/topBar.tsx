@@ -4,7 +4,7 @@ import { X } from "lucide-react";
 // import { CustomButton } from "./ui/customButton";
 import Image from "next/image";
 
-export const Nav = () => {
+export const TopBar = () => {
   const [showSale, setShowSale] = useState(true);
 
   const toggleSection = () => {
@@ -34,15 +34,6 @@ export const Nav = () => {
           </div>
         </div>
       )}
-      {/* <div className="px-12 bg-[#ebe0ce] py-6 items-center flex justify-between">
-        <div>
-          <p>Wilde Apartments</p>
-        </div>
-        <div className="flex gap-3 items-center">
-          <CustomButton className="bg-black text-white" text={"Login"} />
-          <Menu className="text-black" />
-        </div>
-      </div> */}
     </div>
   );
 };

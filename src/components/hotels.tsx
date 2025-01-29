@@ -4,7 +4,6 @@ import img2 from "@/images/image1.jpg";
 import img3 from "@/images/img2.jpg";
 import Image from "next/image";
 import img1 from "@/images/video.jpg";
-
 import {
   AirConditioner,
   Bar,
@@ -12,9 +11,9 @@ import {
   Kitchen,
   Laundry,
   Restaurant,
-} from "./ui/icons";
+} from "../ui/icons";
 import { ImageIcon, Star, X } from "lucide-react";
-import { apartment, pictureGallery } from "./utils/constant";
+import { apartment, pictureGallery } from "../utils/constant";
 
 export const Hotels = ({}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,7 +23,7 @@ export const Hotels = ({}) => {
   };
 
   return (
-    <div className="bg-[#f3ece2] lg:bg-[#ebe0ce] py-4">
+    <div className="bg-[#f3ece2] lg:bg-darkerBrown py-4">
       {apartment.map((apartHotels) => (
         <div key={apartHotels.name}>
           <div className="my-10 px-8 md:px-36 md:flex block justify-between">
@@ -183,7 +182,7 @@ export const Hotels = ({}) => {
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="relative bg-[#ebe0ce] w-full max-w-7xl p-10 md:p-20 h-full overflow-y-auto ">
+          <div className="relative bg-darkerBrown w-full max-w-7xl p-10 md:p-20 h-full overflow-y-auto ">
             {/* Close Button */}
             <button
               onClick={toggleModal}

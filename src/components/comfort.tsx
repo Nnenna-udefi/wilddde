@@ -4,7 +4,7 @@ import Uparrow from "@/images/arrow.jpg";
 import laundry from "@/images/laundryImg.jpg";
 import Image from "next/image";
 
-export const Comfort = () => {
+export const ComfortSection = () => {
   return (
     <div className="bg-[#c4673b] pt-10 pb-32">
       <div className=" px-8 md:px-36 ">

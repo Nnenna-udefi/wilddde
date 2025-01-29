@@ -1,7 +1,7 @@
 import React from "react";
-import { CustomButton } from "./ui/customButton";
+import { CustomButton } from "../ui/customButton";
 import { ChevronDown, Copyright, Facebook, Instagram } from "lucide-react";
-import { Amex, MasterCard, TikTok, Visa, XTwiter } from "./ui/icons";
+import { Amex, MasterCard, TikTok, Visa, XTwiter } from "../ui/icons";
 
 export const Footer = () => {
   return (
@@ -62,7 +62,7 @@ export const Footer = () => {
           </p>
           <div className="flex gap-8 mt-6 items-center">
             <Instagram size={30} />
-            <Facebook className="fill-[#ebe0ce] text-transparent" size={30} />
+            <Facebook className="fill-darkerBrown text-transparent" size={30} />
             <XTwiter />
             <TikTok />
           </div>

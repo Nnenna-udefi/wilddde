@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
-import { CustomButton } from "./ui/customButton";
-import { checkInNav } from "./utils/constant";
+import { CustomButton } from "../ui/customButton";
+import { checkInNav } from "../utils/constant";
 import { SideNav } from "./sideNav";
 
 export const HeroSection = () => {
@@ -20,7 +20,7 @@ export const HeroSection = () => {
       {/* <div className="absolute  inset-0 bg-black opacity-10"></div> */}
       {isSideNavOpen && <SideNav closeNav={() => setIsSideNavOpen(false)} />}
 
-      <div className=" items-center  flex border-b text-md border-borderBrown pb-3 md:text-lg justify-between">
+      <nav className=" items-center  flex border-b text-md border-borderBrown pb-3 md:text-lg justify-between">
         <div>
           <p className="text-lg  text-black">
             <span className="border rounded-full border-black p-2">Wilde</span>{" "}
@@ -34,7 +34,7 @@ export const HeroSection = () => {
           />
           <Menu className="text-white md:text-black" onClick={toggleSideNav} />
         </div>
-      </div>
+      </nav>
 
       <div className="mt-14">
         <h1 className="font-median mb-14 md:text-black text-[#f3ece2] text-[60px] lg:text-[100px] tracking-tight md:w-[50%]  w-full ">

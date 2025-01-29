@@ -1,5 +1,5 @@
 import React from "react";
-import { AirConditioner, Bar, Kitchen, Restaurant } from "./ui/icons";
+import { AirConditioner, Bar, Kitchen, Restaurant } from "../ui/icons";
 
 const wonArray = [
   {

@@ -2,7 +2,7 @@ import { MapIcon } from "lucide-react";
 import React from "react";
 import { Hotels } from "./hotels";
 import { ImageSlide } from "./imageSlide";
-import { Comfort } from "./comfort";
+import { ComfortSection } from "./comfort";
 import { MemberSlide } from "./memberSlide";
 import { SmartSection } from "./smartt";
 import { WonderfulSection } from "./wonderful";
@@ -41,7 +41,7 @@ export const MainSection = () => {
 
       <ImageSlide />
 
-      <Comfort />
+      <ComfortSection />
 
       <MemberSlide />
 

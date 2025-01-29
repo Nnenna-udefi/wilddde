@@ -1,5 +1,5 @@
 import React from "react";
-import { CustomButton } from "./ui/customButton";
+import { CustomButton } from "../ui/customButton";
 import { ChevronDown, MapPin, X } from "lucide-react";
 
 interface SideNavProps {
